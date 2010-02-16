@@ -18,7 +18,8 @@ function get_st_url(partnerid, partnerpass, userid, useremail, firstname, lastna
 			if(data.responseText !== undefined) {
 				var response = eval('('+data.responseText+')');
 				if(response.status == 'ok'){
-					window.location = response.msg[0];
+					//window.location = response.msg[0];
+                    window.open(response.msg[0], 'SmarThinking');
 				}else{
 					alert(response.msg);
 				}
