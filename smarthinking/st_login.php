@@ -10,7 +10,8 @@
    license http://www.gnu.org/licenses/gpl.html GNU Public License
 */
 
-$st_url = 'https://www.smarthinking.com/login/suplogin.cfm';
+//$st_url = 'https://www.smarthinking.com/login/suplogin.cfm';
+$st_url = 'https://services.smarthinking.com/login/suplogin.cfm';
 $curl_post = "partnerid=".$_GET['partnerid']."&partnerpass=".$_GET['partnerpass']."&userid=".$_GET['userid']."&useremail=".$_GET['useremail']."&firstname=".$_GET['firstname']."&lastname=".$_GET['lastname']."&zipcode=".$_GET['zipcode'];
 $ch = curl_init();
 $curlopts = array(
